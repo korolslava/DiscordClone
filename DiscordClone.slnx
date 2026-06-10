@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="DiscordClone.API/DiscordClone.API.csproj" />
+  <Project Path="DiscordClone.Application/DiscordClone.Application.csproj" />
+  <Project Path="DiscordClone.Domain/DiscordClone.Domain.csproj" />
+  <Project Path="DiscordClone.Infrastructure/DiscordClone.Infrastructure.csproj" />
+  <Project Path="DiscordClone.IntegrationTests/DiscordClone.IntegrationTests.csproj" />
+  <Project Path="DiscordClone.Shared/DiscordClone.Shared.csproj" />
+  <Project Path="DiscordClone.UnitTests/DiscordClone.UnitTests.csproj" />
+</Solution>
