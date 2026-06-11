@@ -1,4 +1,5 @@
 ﻿using System.Security.Claims;
+using System.IdentityModel.Tokens.Jwt;
 using DiscordClone.Application.Common.Interfaces;
 using DiscordClone.Shared.Contracts.Events;
 using Microsoft.AspNetCore.Authorization;
