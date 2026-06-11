@@ -25,4 +25,9 @@
     <ProjectReference Include="..\DiscordClone.Shared\DiscordClone.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Persistence\Migrations\" />
+    <Folder Include="Persistence\Repositories\" />
+  </ItemGroup>
+
 </Project>

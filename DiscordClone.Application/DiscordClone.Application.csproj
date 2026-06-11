@@ -17,4 +17,18 @@
     <ProjectReference Include="..\DiscordClone.Shared\DiscordClone.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Common\Exceptions\" />
+    <Folder Include="Features\Auth\Commands\" />
+    <Folder Include="Features\Auth\Queries\" />
+    <Folder Include="Features\Channels\Commands\" />
+    <Folder Include="Features\Channels\Queries\" />
+    <Folder Include="Features\Friends\Commands\" />
+    <Folder Include="Features\Friends\Queries\" />
+    <Folder Include="Features\Messages\Commands\" />
+    <Folder Include="Features\Messages\Queries\" />
+    <Folder Include="Features\Servers\Commands\" />
+    <Folder Include="Features\Servers\Queries\" />
+  </ItemGroup>
+
 </Project>
