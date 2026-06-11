@@ -1,6 +1,11 @@
 ﻿using System.Reflection;
 using DiscordClone.Application.Common.Behaviors;
 using FluentValidation;
+using System.Reflection;
+using DiscordClone.Application.Common.Behaviors;
+using FluentValidation;
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
