@@ -30,8 +30,6 @@
     <Folder Include="Features\Friends\Queries\" />
     <Folder Include="Features\Messages\Commands\" />
     <Folder Include="Features\Messages\Queries\" />
-    <Folder Include="Features\Servers\Commands\" />
-    <Folder Include="Features\Servers\Queries\" />
   </ItemGroup>
 
 </Project>
