@@ -437,3 +437,6 @@ src/DiscordClone.API/uploads/
 
 # User secrets
 **/secrets.json
+
+.env
+!.env.example
