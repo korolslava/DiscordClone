@@ -24,12 +24,9 @@
 
   <ItemGroup>
     <Folder Include="Common\Exceptions\" />
-    <Folder Include="Features\Channels\Commands\" />
     <Folder Include="Features\Channels\Queries\" />
     <Folder Include="Features\Friends\Commands\" />
     <Folder Include="Features\Friends\Queries\" />
-    <Folder Include="Features\Messages\Commands\" />
-    <Folder Include="Features\Messages\Queries\" />
   </ItemGroup>
 
 </Project>
