@@ -18,6 +18,17 @@ builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 
 builder.Services.AddControllers();
+
+builder.Services.Configure<Microsoft.AspNetCore.Http.Features.FormOptions>(opt =>
+{
+    opt.MultipartBodyLengthLimit = 25 * 1024 * 1024;
+});
+
+builder.WebHost.ConfigureKestrel(opt =>
+{
+    opt.Limits.MaxRequestBodySize = 25 * 1024 * 1024;
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerWithJwt();
 builder.Services.AddCorsPolicy(builder.Configuration);
