@@ -4,6 +4,7 @@ using DiscordClone.Application;
 using DiscordClone.Infrastructure;
 using DiscordClone.Infrastructure.Hubs;
 using DiscordClone.Infrastructure.Persistence;
+using DiscordClone.Infrastructure.Persistence.Seeders;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
@@ -40,7 +41,11 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    var logger = scope.ServiceProvider
+        .GetRequiredService<ILogger<Program>>();
+
     await db.Database.MigrateAsync();
+    await DatabaseSeeder.SeedAsync(db, logger);
 }
 
 app.UseMiddleware<ExceptionMiddleware>();
