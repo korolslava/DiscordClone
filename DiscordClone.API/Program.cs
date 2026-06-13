@@ -61,12 +61,9 @@ using (var scope = app.Services.CreateScope())
 
 app.UseMiddleware<ExceptionMiddleware>();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "DiscordClone API v1"));
-}
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "DiscordClone API v1"));
 
 app.UseSerilogRequestLogging();
 app.UseStaticFiles();
