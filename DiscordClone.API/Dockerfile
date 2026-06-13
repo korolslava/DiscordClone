@@ -20,13 +20,8 @@ RUN dotnet publish "DiscordClone.API.csproj" \
 FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final
 WORKDIR /app
 
-RUN addgroup --system appgroup && \
-    adduser --system --ingroup appgroup appuser
-
 COPY --from=build /app/publish .
-RUN mkdir -p uploads && chown appuser:appgroup uploads
-
-USER appuser
+RUN mkdir -p uploads
 
 EXPOSE 8080
 ENV ASPNETCORE_URLS=http://+:8080
