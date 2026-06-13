@@ -15,6 +15,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.2" />
     <PackageReference Include="StackExchange.Redis" Version="2.13.17" />
   </ItemGroup>
@@ -23,6 +27,11 @@
     <ProjectReference Include="..\DiscordClone.Application\DiscordClone.Application.csproj" />
     <ProjectReference Include="..\DiscordClone.Domain\DiscordClone.Domain.csproj" />
     <ProjectReference Include="..\DiscordClone.Shared\DiscordClone.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Persistence\Migrations\" />
+    <Folder Include="Persistence\Repositories\" />
   </ItemGroup>
 
 </Project>

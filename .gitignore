@@ -427,3 +427,16 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Logs
+logs/
+*.log
+
+# Uploads
+src/DiscordClone.API/uploads/
+
+# User secrets
+**/secrets.json
+
+.env
+!.env.example
